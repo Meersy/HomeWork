@@ -1,0 +1,27 @@
+Ödev 1
+Eski ödevdeki webisteler sýrasýz liste olarak düzenlenecek
+Koda yazdýðým yorumlar okunarak hatalar giderilecek
+Ödev 2
+Ýnternetten yemek menüsü bul (restoran menüsü gibi mesela)
+Bu listeyi sýrasýz liste olarak aynýsýný yada benzerini yap
+Fiyatlarý yazmana gerek yok
+Yemeðin ismi olsa yeter
+Ödev 3
+En sevdiðin 10 futbolcu ismi sýralý liste olarak yapýlacak.
+Sýralama formatý numaralý olucak
+Ödev 4
+En sevdiðin 10 film sýralý liste olucak
+Sýralama formatý roma rakamlarý
+Ödev 5
+Þehir listesi yapýlacak
+Þehirler alfabetik olacak (Ýngiliz alfabesi)
+Her harf için bir yabancý þehir olucak (ülke eðil þehir!!!)
+Sýralama formatý büyük harf
+Ödev 6
+Kelime listesi yapýlacak
+sýrlama formatý küçük harf
+her harf için bir kelime bulunacak
+Bu arada Ýngiliz alfabesi ve Ýngilizce kelimeler yazýlacak
+Ödev 7
+W3Schools websitesinde ol ile ilgili alaný oku. Ödevi yaparken yardýmcý olucak
+W3Schools websitesinde HTML Formatting alanýný oku
