@@ -1,0 +1,5 @@
+Dl ile rehber (telefon) listesi yap
+bazýlarýna ufak açýklama (örn 20 tl borç)
+html formatting ve html lists oku (w3schools)
+html formatting egzersizler yapýlcak
+internetten yazý bulup formattings ve paragraf elementleriyle formatla ve html sayfaya dönüþtür
