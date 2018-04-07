@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    /* static-size isimli bir class yaratıyorum */
+
+    /* Class içerisinde genişlik ve yükseklik özelliklerinin varyasyonları var */
+
+    .static-size {
+      /* minimum genişlik */
+      min-width: 500px;
+      /* genişlik */
+      width: 100%;
+      /* maksimum genişlik */
+      max-width: 800px;
+
+      /* Yukarıdaki kod bloğunda minimum genişlik 500px,
+      Maksimum genişlik 800px dir.
+      Bu demektirki width 500px ile 800px arasında bir değere sahip olucaktır */
+      /* Minimum yükseklik */
+      min-height: 300px;
+      /* Yükseklik */
+      height: 800px;
+      /* Maksimum yükseklik */
+      max-height: 650px;
+
+      /* Burda ise yükselik tanımladık.
+      Minimum 300px, maksimum 650px.
+      Buraya DİKKAT!!!!!!!!!
+      Yükseliğe 800px verdik ama yükselik 650px olucak.
+      ÇÜNKÜ MAKSİMUM yüksekliğe 650px değer verdik. */
+      /* Sabit değerler ASLA minimumdan küçük ya da maksimumdan büyük olamaz */
+    }
+
+    /* Resimler için CSS yazıyoruz. */
+
+    img {
+      /* Genişlik 40% */
+      width: 40%;
+      /* Maksimum yükseklik 150px */
+      /* Eğer resmin boyutu 150px den fazla ise 150px olucak */
+      max-height: 150px;
+    }
+
+    /* NOT: inline elementler sabit yükseklik ve genişlik alamazlar */
+
+    /* Daha doğrusu ekstra bir koda daha ihtiyaç duyarlar */
+
+    /* Buna daha sonra değineceğiz */
+
+    /* Fakat img elementi bu konuda bir istisnadır. Sabit genişlik ve yükseklik değeri alabilirler */
+
+    /* Aşağıda a elemnti için sabit genişlik ve yükseklik yazdık. Fakat çalışmayacklar */
+
+    /* Çünkü a bir inline elementtir */
+
+    a {
+      width: 500px;
+      height: 500px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- EKSTRA NOT -->
+  <!-- CSS özellikleri default değerlere sahiptir -->
+  <!-- Block elementlerin default width değeri 100% -->
+  <!-- default height değerleri ise auto dur -->
+  <!-- auto yüksekliğin içeriğe göre otomatik ayarlanacağı anlamına gelir -->
+
+
+
+  <img src="https://i.pinimg.com/originals/04/6a/88/046a887ccbdf27ec948112cb98259155.jpg" alt="">
+
+  <img src="https://lh3.googleusercontent.com/vDv_AMrcRofUWnqZD8JUAD-lTkgqSS5Ad1Weamb-f3i9RHxeBO6jyQ7a_iVcv68Zp7U=h310" alt="">
+
+  <!-- Buraya yukarıda a için yazılan CSS kodlarının çalışmayacağını görmen için örnek bir a yazıyorum -->
+  <a href="">dsfgdfgf</a>
+
+  <!-- Yukarıda yazdığım static-size class ına sahip bir p elementi -->
+  <p class="static-size">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio magnam maxime, quidem dolor deleniti animi nihil illum eius
+    quaerat atque et saepe aliquid repellat facilis? Corrupti odio rem repudiandae. Nam!</p>
+
+</body>
+
+</html>
