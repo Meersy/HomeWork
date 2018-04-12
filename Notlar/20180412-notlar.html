@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+   /* Resmin ekranın boyutundan fazla olmamasını sağlar */
+   /* Resim ekranın içinde kalır */
+   /* Uygulamak istediğin resme class olarak eklemeyi unutma*/
+   .img-responsive {
+     max-width: 100%;
+   }
+   
+   /* Çoklu selektör kullanım örneği */
+   /* Birden fazla selektör kullanılacaksa, selektörler virgülle ayrılır */
+   .day p,
+   .night p {
+     /* Yazı satırın başını ve sonunu kapsayacak şekilde fit olur */
+     text-align: justify;
+   }
+
+  /* Gece temalı kutu */
+  .night {
+  	background-color:black;
+    color:white;
+    padding:20px; /* Kutuya içerden boşluk verir. */ /* Bu konuya değineceğiz*/
+  }
+  
+  /* Gündüz temalı kutu */
+  .day {
+  	background-color: yellow;
+    color: black;
+    padding:20px;
+  }
+   
+   .gallery img {
+     width: 30%;
+   }
+</style>
+</head>
+<body>
+
+<div class="night">
+
+  <h2>London</h2>
+  
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  
+  <img src="http://media.caranddriver.com/images/media/51/2017-10best-lead-photo-672628-s-original.jpg" alt="" class="img-responsive">
+  
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  
+  <div class="gallery">
+  
+      <img src="http://media.caranddriver.com/images/media/51/2017-10best-lead-photo-672628-s-original.jpg" alt="">
+      <img src="http://media.caranddriver.com/images/media/51/2017-10best-lead-photo-672628-s-original.jpg" alt="">
+      <img src="http://media.caranddriver.com/images/media/51/2017-10best-lead-photo-672628-s-original.jpg" alt="">
+  
+  </div>
+  
+</div> 
+
+<div class="day">
+
+  <h2>London</h2>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  
+  <!-- Resimli link örneği -->
+  <a href="https://www.google.com" target="_blank">
+    <img src="http://media.caranddriver.com/images/media/51/2017-10best-lead-photo-672628-s-original.jpg" alt="" class="img-responsive">
+  </a>
+  
+</div> 
+
+</body>
+</html>
