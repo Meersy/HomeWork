@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- 
+  html elementine lang attribute vermeliyiz 
+  sayfanın hagi dilde olduğunu belirtir
+  dil ismi kısa kodlarla yazılır
+  örneğin; türkçe için tr, ingilizce için en kullanılır
+-->
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    /* Metindeki bütün harfleri büyük yapar */
+
+    .text-uppercase {
+      text-transform: uppercase;
+    }
+
+    /* Metindeki bütün harfleri küçük yapar */
+
+    .text-lowercase {
+      text-transform: lowercase;
+    }
+
+    /* Metni her kelimenin ilk harfini büyük, diğerlerini küçük yapar */
+
+    .text-capitalize {
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- text-transform özelliğini uyguluyoruz -->
+  <h1 class="text-uppercase">bu çok önemli bir başlık</h1>
+  <h2 class="text-capitalize">bu bir altbaşlık</h2>
+  <p class="text-lowercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error soluta atque labore placeat reiciendis dolor officiis minima
+    magni est doloremque eveniet aspernatur cum earum itaque, alias deleniti, modi quos numquam!</p>
+
+  <!-- 
+		text-transform özelliği span ile çok etkili bir şekilde kullanılabilir
+	 -->
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint error, in eaque
+    <span class="text-uppercase">burası önemli olduğu için text-transform ile büyük harfe çevrildi</span> similique incidunt laudantium eius ipsam, non
+    voluptas culpa laborum, rem veritatis adipisci tempore provident maxime quidem temporibus qui.</p>
+
+</body>
+
+</html>
