@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Parcel Sandbox</title>
+  <meta charset="UTF-8" />
+
+  <!-- Google Fontunun link elementi ile eklenmesi -->
+  <link href="https://fonts.googleapis.com/css?family=Cute+Font" rel="stylesheet">
+
+  <!--
+		* link elementi sayfaya kaynak dosya çekmek için kullanılır
+		* link elementi ile font, icon ya da css dosyası eklenebilir
+		* kendiliğinden kapanan bir elementtir. (self-closing)
+		* kullanım örneği
+			- <link href="kaynağın linki buraya yazılacak" rel="kaynağın ne olduğu burda tanımlanacak">
+			- Font çekerken rel attribute içine stylesheet yazılır. (CSS demek)
+	-->
+
+  <style>
+    /* Google Fontlarını css import metoduyla eklenmesi */
+
+    /* Aşağıdaki linkler Google Fonts tarafında veriliyor */
+
+    @import url('https://fonts.googleapis.com/css?family=Gugi');
+    @import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+    @import url('https://fonts.googleapis.com/css?family=Lobster');
+
+    /*
+		 	* @import css içine bir başka css dosyasını çekmek için kullanılır
+			* Fontlarda css dosyası olduğu için onlarda aynı yolla eklenir
+			* Kullanım mantığını anlamak
+				- @import url("ekleyeceğimiz dosyanın kaynağı buraya yazılıyor");
+				- Parantez içinde tek veya çift tırnak kullanılabilir
+		 */
+
+    /* 
+			font-family kullanımı 
+			font-family: "font adı", "ikinci font adı", ..... ;
+			* font-family yazı fontu seçmemizi sağlar
+			* birden fazla değer alabilir
+			* değerler virgülle ayrılmalıdır
+			* font adında kelimeler arası boşluk varsa, font tırnak içine alınmalıdır
+			* font adı tek kelimeyse tırnak kullanmaya gerek yoktur
+			* birden fazla değer kullanımında çalışma mantığı şöyledir.
+				-	ilk değer uygulanmaya çalışılır
+				- herhangi bir sorun olması durumunda ikinci değer kullanılır
+				- aynı mantık 3, 4, 5 veya sonraki değerler içinde devam eder
+		*/
+
+    .times-new-roman {
+      font-family: "Times New Roman", serif, Times;
+    }
+
+    .arial {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .source-sans-pro {
+      font-family: "Source Sans Pro", "Arial", Helvetica, sans-serif;
+    }
+
+    .monospace {
+      font-family: monospace;
+    }
+
+    .cursive {
+      font-family: cursive;
+    }
+
+    .fantasy {
+      font-family: fantasy;
+    }
+
+    /* Google Fontları */
+
+    /*
+			DİKKAT!!!!!!
+			* Bu fontların çalışabilir duruma gelmesi için fontların sayfaya eklendiğine emin olmalısın
+		*/
+
+    .gugi {
+      font-family: 'Gugi', cursive;
+    }
+
+    .cute-font {
+      font-family: 'Cute Font', cursive;
+    }
+
+    .gamja-flower {
+      font-family: 'Gamja Flower', cursive;
+    }
+
+    .lobster {
+      font-family: 'Lobster', cursive;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p class="times-new-roman">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat nemo laborum accusamus delectus amet libero quaerat natus
+    explicabo voluptatem quidem repudiandae, esse quos, molestias ullam aliquam nobis vitae excepturi iure.</p>
+
+  <p class="arial">Dolores ducimus accusantium odit qui ratione rerum illum magnam ad tenetur commodi quis atque fuga distinctio rem quibusdam,
+    mollitia omnis saepe, dolorem earum. Quidem harum sint, dolores fuga magnam dolorum!</p>
+
+  <p class="source-sans-pro">Cupiditate, id. Corporis, error sapiente dolorem animi et, voluptatem culpa nesciunt itaque delectus distinctio inventore.
+    Commodi sequi, beatae saepe rem asperiores doloribus id nam sint aperiam ullam nemo dolores inventore.</p>
+
+  <p class="monospace">Repellat quaerat ab incidunt consequuntur corrupti laborum amet animi sint assumenda blanditiis modi maxime quis, unde
+    voluptatum deserunt eos aliquam enim. Dolor, quibusdam enim sint consectetur dolorem non mollitia voluptates!</p>
+
+  <p class="cursive">Dolores commodi incidunt repellat impedit possimus quo, adipisci placeat eos eius atque laboriosam tenetur odit animi nemo
+    labore quam aliquid sequi, nulla fugit, autem facilis tempore. Quo odit quos quis?</p>
+
+  <p class="fantasy">Distinctio amet, sapiente autem fugiat quam debitis dolores ipsam excepturi ipsa dicta, perferendis ex numquam consequuntur
+    atque quae ut aut iste pariatur deleniti asperiores. Quidem delectus minima maxime enim totam?</p>
+
+  <p class="gugi">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto laborum aperiam facilis in alias cumque. Eius tempora sequi,
+    exercitationem porro, natus commodi ratione iste ab ipsam reiciendis praesentium delectus et.</p>
+
+  <p class="cute-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, iure, ipsum assumenda tempore est minus debitis nam amet
+    praesentium architecto ex sed quo dicta voluptates voluptatibus. Accusantium amet esse laborum?</p>
+
+  <p class="gamja-flower">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In consectetur atque quos ducimus sapiente distinctio nulla maiores
+    porro quod, natus quia officia consequatur, dolor tenetur, totam sunt facilis nisi neque.</p>
+
+  <p class="lobster">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, beatae praesentium distinctio quas maiores nostrum
+    mollitia exercitationem, modi veritatis corporis dolor error quia eaque rem itaque. In officia iure totam.</p>
+</body>
+
+</html>
