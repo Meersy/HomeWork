@@ -1,0 +1,38 @@
+p {
+  text-align: center;
+}
+
+/* Yeni Konu */
+/* 
+  font-weight
+  Fontun (yazının) kalınlığını belirlemek için kullanılır
+  
+  Örnek Kullanım
+  font-weight: yazı-kalınşığı değeri;
+  
+  Alabildiği değerler
+  lighter, normal, bold veya
+  100, 200, 300, 400, 500, 600, 700, 800, 900
+
+  100 Thin
+  200 Extra Light
+  300 Light
+  400 Normal
+  500 Medium
+  600 Semi Bold
+  700 Bold
+  800 Extra Bold
+  900 Ultra Bold
+*/
+
+.thin {
+  font-weight: 100;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.lighter {
+  font-weight: lighter;
+}
