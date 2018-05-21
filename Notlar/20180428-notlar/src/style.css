@@ -1,0 +1,32 @@
+/* yuvarlak kenarlı çerçeve */
+.smooth-border {
+  border: 10px solid coral;
+  border-radius: 10px;
+}
+
+/* yuvarlak kenarlı çerçevesiz element */
+.smooth-corner {
+  /* border-radius özelliğini uygulamak için elementin çerçevesi olmak zorunda değildir */
+  border-radius: 10px;
+}
+
+/* yuvarlak kenarlı resim */
+.smooth-image {
+  border-radius: 20px;
+
+  max-width: 100%;
+}
+
+/* border-radius ile yuvarlak resim yapmak */
+.circle-image {
+  border-radius: 50%;
+  max-width: 100%;
+}
+
+.bg-blue {
+  background-color: steelblue;
+}
+
+div {
+  padding: 10px 20px;
+}
