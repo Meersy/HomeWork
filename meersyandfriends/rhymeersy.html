@@ -2,14 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CSS Website Layout</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-color: lightslategray;
+        }
+
+        /* Style the header */
+        .header {
+            background-color: lightslategray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style the top navigation bar */
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        /* Style the topnav links */
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .border-left {
+            border-left: black 7px solid;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .color {
+            color: darkred;
+        }
+
+        .padding {
+            padding: 10px;
+
+        }
+
+        .white {
+            color: white;
+        }
+
+        .white-background {
+            background-color: white;
+        }
+
+        p {
+            font-size: 21px;
+        }
+
+        .color-green {
+            color: green;
+        }
+
+        .background {
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 7px;
+            padding-left: 5px;
+            border: #333 5px solid;
+        }
+
+        .p-background {
+            background-color: white;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-right: 5px;
+            padding-left: 5px;
+            border: #333 3px solid;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="header color">
+        <h1 class="white-background background">Mersi Company</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="https://github.com/Meersy">GitHub</a>
+        <a href="">Instagram</a>
+        <a href="">Twitter</a>
+        <a href="">Youtube</a>
+        <a href="">Facebook</a>
+        <a href="">Mail</a>
+        <a href="https://discord.gg/B5VNCjA">Discord</a>
+        <a href="https://meersy.github.io/HomeWork/meersyandfriends/sitekodlama.html">League of Legends</a>
+    </div>
+
+    <h2 class="border-left padding ">Mersi Company Nedir?</h2>
+    <br>
+    <div class="padding ">
+        <p><span class="color-green background">Tanım</span> <span class="white-background p-background">RhyMeersy
+                Company,
+                bir
+                oyuncu grubudur. İnsanlar
+                birbiri
+                ile tanışıp arkadaş olurlar.</span> </p>
+
+    </div>
 
 </body>
 
