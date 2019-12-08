@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .darkblue-bg {
+            background-color: #1d365d;
+        }
+
+        .white-bg {
+            background-color: white;
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .text-jess {
+            text-align: center;
+            color: #b9c8e0;
+            font-size: 27px;
+        }
+
+        .text-jess2 {
+            text-align: center;
+            color: #b9c8e0;
+            font-size: 18px;
+        }
+
+        .text-blue {
+            color: #428bca;
+            font-size: 17px;
+            text-align: center;
+
+        }
+
+        .text-purple {
+            color: #6500a3;
+        }
+
+        .text-lightblue {
+            color: #00a3a3;
+        }
+
+        .text-lightblue2 {
+            color: #0078bd;
+        }
+
+        .text-orange {
+            color: #d64f00;
+        }
+
+        .text-darkblue {
+            color: #00358a;
+        }
+
+        .border-darkblue {
+            background-color: #0b1a28;
+            padding: 3px;
+
+        }
+
+        .text-large {
+            font-size: large;
+        }
+
+        .text-small {
+            font-size: 15px;
+        }
+
+        .text-code {
+            font-size: 15px;
+        }
+
+        h1 {
+            color: #1d365d;
+        }
+
+        a {
+            text-decoration: none;
+            color: #43759e;
+        }
+
+        .border-pre {
+            border: 1px solid gray;
+            background-color: #f5f5f5;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        .banner {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="darkblue-bg banner">
+
+        <img src="https://i.hizliresim.com/dLA5ND.png" alt="" height="117" width="264">
+        <p class="text-jess">It's CSS, with just a little more.</p>
+        <p class="text-jess2">Use with Node.js:</p>
+        <p class=" text-blue"><span class="border-darkblue">npm install -g less</span> </p>
+        <p class="text-blue"><span class="border-darkblue">> lessc styles.less styles.css</span> </p>
+        <p class="text-jess2">Or the browser:</p>
+        <p class="text-blue">
+            <pre><link rel="stylesheet/less" type="text/css" href="styles.less" /></pre>
+        </p>
+        <p class="text-blue">
+            <pre>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+            </pre>
+        </p>
+    </div>
+
+    <div class="white-bg ">
+        <h1>Overview</h1>
+        <p class="text-large">Less (which stands for Leaner Style Sheets) is a backwards-compatible language
+            extension
+            for CSS. This is
+            the official documentation for Less, the language and Less.js, the JavaScript tool that converts your
+            Less styles to CSS styles.</p>
+        <p class="text-small">Because Less looks just like CSS, learning it is a breeze. Less only makes a few
+            convenient additions to the CSS language, which is one of the reasons it can be learned so quickly.</p>
+        <ul>
+            <li>
+                For detailed documentation on Less language features, see <a href="">Features</a>
+            </li>
+            <li>
+                For a list of Less Built-in functions, see <a href="">Functions</a>
+            </li>
+            <li>
+                For detailed usage instructions, see <a href="">Using Less.js</a>
+            </li>
+            <li>
+                For third-party tools for Less, see <a href="">Tools</a>
+            </li>
+        </ul>
+        <br>
+        <p>What does Less add to CSS? Here's a quick overview of features.</p>
+        <br>
+        <h1>Variables</h1>
+        <p>These are pretty self-explanatory:</p>
+        <br>
+        <pre class="border-pre text-code">
+  <span class="text-purple">@width</span>: <span class="text-lightblue">10px</span>;
+  <span class="text-purple">@height</span>:<span class="text-purple"> @width</span> + <span class="text-lightblue">10px</span>;
+                    
+  <span class="text-orange"> #header</span> {
+    <span class="text-lightblue2">width</span>: <span class="text-purple">@width</span>;
+    <span class="text-lightblue2">height</span>: <span class="text-purple">@height</span>;
+   }
+            </pre>
+        Outputs:
+
+        <pre class="border-pre text-code ">
+ <span class="text-orange ">#header</span> {
+  <span class="text-lightblue2">width</span>: <span class="text-lightblue">10px</span>;
+  <span class="text-lightblue2">height</span>: <span class="text-lightblue">20px</span>;
+ }
+</pre>
+    </div>
+    </div>
+    <br>
+    <a href="" class="">Learn More About Variables</a>
+
+    <h1>Mixins</h1>
+
+    <p class="text-large">Mixins are a way of including ("mixing in") a bunch of properties from one rule-set into
+        another rule-set. So say
+        we have the following class:</p>
+
+    <pre class="border-pre text-code">
+ <span class="text-darkblue">.bordered</span> {
+     <span class="text-lightblue2">border-top</span>: dotted <span class="text-lightblue">1px</span> black;
+     <span class="text-lightblue2">border-bottom</span>: solid <span class="text-lightblue">2px</span> black;
+ }       </pre>
+
+    <p class="text-large">And we want to use these properties inside other rule-sets. Well, we just have to drop in the
+        name of the class where we want the properties, like so:</p>
+
+    <pre class="border-pre text-code">
+ <span class="text-orange">#menu</span> a {
+    <span class="text-lightblue2">color</span>: <span class="text-lightblue">#111</span>;
+    <span class="text-darkblue">.bordered</span>();
+    }
+              
+    <span class="text-darkblue">.post</span> a {
+      <span class="text-lightblue2">color</span>: red;
+      <span class="text-darkblue">.bordered</span>();
+    }   </pre>
+
+    <p class="text-large">The properties of the <span class="text-lightblue2">.bordered</span> class will now appear in
+        both <span class="text-lightblue2">#menu a</span> and <span class="text-lightblue2">.post a.</span> (Note that
+        you can also use
+        <span class="text-lightblue2">#ids</span> as mixins.)</p>
+
+    <a href="">Learn More About Mixins</a>
+
+    <h1>Nesting</h1>
+
+    <p class="text-large">Less gives you the ability to use nesting instead of, or in combination with cascading. Let's
+        say we have the following CSS:</p>
+</body>
+
+</html>
